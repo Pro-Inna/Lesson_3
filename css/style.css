@@ -1,0 +1,161 @@
+/* 
+.info {
+   color: red;
+}
+ */
+/*
+ div.info{
+   color: red;;
+ }
+ */
+ 
+ h3.info{
+   color: red;
+ }
+
+
+ #four-advices-title{
+   color: rgb(0, 255, 26);
+ }
+ 
+ li{
+   color: blueviolet;
+ }
+
+ .clothes.info{ 
+   color: coral;
+ }
+
+  .clothes.info li{
+     color: coral;
+  }
+
+  .four-advices p{
+    color: gray;
+  }
+
+  .second li ol li{
+    color: darkgreen;
+  }
+
+  .ideas-text.blue{
+    color: blue;
+  }
+
+  #ideas-title{
+    color: pink;
+  }
+
+  .foto-time{
+    color: aquamarine;
+  }
+
+  .ideas h3{
+    color: burlywood;
+  }
+
+  .about > p{
+    color: darkorange;
+  }
+/* 
+  .about-2 > p{
+    не працює бо тут не має першого рівня вкладенності
+    color: red;
+  }
+ */
+.about-3 {
+  color: deeppink;
+}
+
+.about-3 h2{
+  color: aqua;
+}
+
+ .about-3 > p{
+  /* звернення до усіх р першого рівня вкладенності  */
+  color: red;
+ }
+
+ .about-3.title{
+  /* усі теги з цими двума класами одночасно */
+  color: blue;
+ }
+
+ .about-2, 
+ .about-3 {
+  color: aquamarine;
+ }
+
+ .block-info .info-title{
+  /* тут є пробіл
+  для всіх info-title котрі знаходяться всередині block-info */
+  color: chartreuse;
+ }
+
+  .block-info.info-title {
+   /* тут пробілу немає - для всіх елементів котрі мають одночасно клас block-info і info-title*/
+    color: chartreuse;
+    }
+
+.block-info > p{
+  color: rgb(157, 74, 109);
+}
+
+.block *{
+  /* Усі обєкти в середині класу block (тому дів 4 не став жовтим) */
+  color: gold;
+}
+ /* 
+.block-info ~ h2 {
+  color: violet;
+}
+ */
+
+.block-info ~ *{
+  color: red;
+}
+ 
+.home + p{
+  color: maroon;
+}
+
+.home + span {
+  /* тільки перший спан того самого рівня що і елемент з классом home */
+  color: burlywood;
+}
+
+/* ------------------------- */
+
+.example-title {
+  color: aqua;
+}
+
+.example-title + p{
+  color: blue;
+}
+/*  
+.example-title ~ p{
+  color: red;
+}
+*/
+
+.example-title ~ .example-text{
+  color: pink;
+}
+
+.example-info > p{
+  color: aquamarine;
+}
+
+.big.example-info-text{
+  color: chartreuse;
+}
+
+.example-info .big{
+  color: gold;
+}
+
+.big, 
+.example-list li{
+  color: yellowgreen;
+}
